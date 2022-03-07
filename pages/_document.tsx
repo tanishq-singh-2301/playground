@@ -10,8 +10,8 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <meta name="description" content="Check if you are dumb 💀 or not?" />
-                    <meta name="keywords" content="are, you, dumb, yes, no" />
+                    <meta name="description" content="" />
+                    <meta name="keywords" content="" />
                     <meta name="robots" content="index, follow" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                     <meta name="language" content="English" />

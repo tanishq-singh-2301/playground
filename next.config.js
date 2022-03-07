@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
-const withPWA = require('next-pwa')
+
+const withPWA = require('next-pwa');
 
 const pwaConfig = {
   pwa: {
@@ -10,9 +11,9 @@ const pwaConfig = {
 
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    outputStandalone: true,
-  }
+  // experimental: {
+  //   outputStandalone: true,
+  // }
 }
 
 if (process.env.DEV == 'true')
@@ -20,6 +21,6 @@ if (process.env.DEV == 'true')
 
 else
   module.exports = withPWA({
-    ...nextConfig,
-    ...pwaConfig
-  });
+    ...pwaConfig,
+    ...nextConfig
+  })

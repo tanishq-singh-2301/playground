@@ -1,4 +1,5 @@
 import '../styles/globals.css';
+import 'codemirror/lib/codemirror.css';
 import type { AppProps } from 'next/app';
 
 const appHeight: Function = (): void => {

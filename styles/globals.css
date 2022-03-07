@@ -21,13 +21,26 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #0d2821;
 }
 
 #__next {
   height: 100%;
   width: 100%;
-  padding: 1px;
+}
+
+.CodeMirror {
+  height: 100%!important;
+}
+
+.CodeMirror-hscrollbar {
+  overflow-y: hidden!important;
+  overflow-x: hidden!important;
+}
+
+@media (min-width: 1024px) {
+  .CodeMirror {
+    width: 100%!important;
+  }
 }
 
 a {
