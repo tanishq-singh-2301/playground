@@ -6,6 +6,12 @@ describe('Home Page', () => {
         cy.visit('http://localhost:3000')
     });
 
+    describe("Button Tests", () => {
+        it("Button search", () => {
+            cy.contains("Button");
+        });
+    });
+
 });
 
 export { };
